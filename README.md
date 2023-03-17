@@ -77,7 +77,7 @@ MNIST test dataset, while for CIFAR-10 and ImageNet we
 use 1000 samples randomly chosen from their corresponding
 test datasets. For MNIST, we use a robust model called IBP. For CIFAR-10, we use three models: an adversarially trained PreActResNet-18, a regularly
 trained Wide ResNet 28-10 (WRN-28 − 10) and
-LeNet. These models are obtainable via the RobustBench library. On ImageNet, we test the attacks on two
+LeNet. These models are obtainable via the [RobustBench](https://robustbench.github.io/). On ImageNet, we test the attacks on two
 ResNet-50 (RN-50) models: one regularly trained and one
-ℓ2 adversarially trained, obtainable through the robustness
-library.
+ℓ2 adversarially trained, obtainable through the [robustness library](https://github.com/MadryLab/robustness)
+.
