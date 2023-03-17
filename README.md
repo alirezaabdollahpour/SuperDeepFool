@@ -32,10 +32,6 @@ adversarial perturbations.
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Dockerfile Documentation</title>
-  </head>
   <body>
     <h1>Dockerfile Documentation</h1>
     <p>This Dockerfile is used to build a Docker image that runs a Python application. The application is stored in the /app directory within the container, and the Docker image is based on the official Python 3.9 slim-buster image.</p>
