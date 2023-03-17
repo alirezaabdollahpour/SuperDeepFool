@@ -32,9 +32,11 @@ adversarial perturbations.
 
 ```
 └── attacks             # Source code for attacks
-    ├── attack            # Attack class
-    ├── DeepFool              # DeepFool
-    ├── SuperDeepFool             # SuperDeepFool
+    ├── attack          # Attack class
+    ├── DeepFool        # DeepFool
+    ├── SuperDeepFool   # SuperDeepFool
+└── curvature           # source code of curvature
+    └── curvature       # curvature analysis
 └── utils             # Source code for utils
   ├── utils            # utils function
 
@@ -138,3 +140,9 @@ For use our code please cd to curvature folder and run this command :
 ```
 python curvature.py
 ```
+
+## Implementations
+In terms of implementation, we use [Pytorch](https://github.com/pytorch/pytorch). [Foolbox](https://github.com/bethgelab/foolbox) and [Torchattcks](https://github.com/Harry24k/adversarial-attacks-pytorch) libraries are used to implement adversarial
+attacks.
+
+
