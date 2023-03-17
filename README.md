@@ -128,3 +128,13 @@ of perturbation to 2.6 and set the maximum number of iterations for SDF to 6. We
 for the first 200 epochs, and we then fine-tune it with SDF
 generated adversarial examples for 60 more epochs. Our
 model reaches a test accuracy of 90.8%.
+
+## Curvature analysis
+For part of our experiments, we analyzed the curvature of the models. 
+We've simplified the code from [Efficient Training of
+Low-Curvature Neural Networks](https://arxiv.org/pdf/2206.07144.pdf) paper and modified it to be easier to use with [RobustBench](https://robustbench.github.io/). Please refer to [CURE](https://openaccess.thecvf.com/content_CVPR_2019/papers/Moosavi-Dezfooli_Robustness_via_Curvature_Regularization_and_Vice_Versa_CVPR_2019_paper.pdf) and [Efficient Training of
+Low-Curvature Neural Networks](https://arxiv.org/pdf/2206.07144.pdf) for a more detailed analysis.
+For use our code please cd to curvature folder and run this command :
+```
+python curvature.py
+```
