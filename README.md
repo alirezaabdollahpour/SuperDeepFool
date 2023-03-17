@@ -28,4 +28,4 @@ adversarial perturbations.
 <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="300" width="300"/>
 </p>
 
-# Running in Docker <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/docker.png" alt="docker" style="float: left; margin-right: 10px; width: 150px;">
+# Running in Docker <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/docker.png" alt="docker" style="float:right; margin-right: 10px; width: 150px;">
