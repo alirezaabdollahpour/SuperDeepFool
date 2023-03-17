@@ -86,3 +86,9 @@ ResNet-50 (RN-50) models: one regularly trained and one
 |---|:---:|:---:|:---:|
 | DF | 0.17 |0.15 | 14 |
 | SDF | 0.11 | 0.10 | 32|
+
+### Comparison with DeepFool in terms of orthogonality
+| Attack | Lenet | ResNet-18 | WRN-28-10 |
+|---|:---:|:---:|:---:|
+| DF | 0.89 |0.14 | 0.21 |
+| SDF | 0.92 | 0.72 | 0.80|
