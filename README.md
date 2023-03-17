@@ -102,5 +102,4 @@ ResNet-50 (RN-50) models: one regularly trained and one
 | FMN | 99.3 | 0.10 | 1000|
 | C&W | 100 | 0.21 | 82667|
 | SDF | 100 | 0.09 | 37|
-| DDN | 0.92 | 0.72 | 0.80|
 
