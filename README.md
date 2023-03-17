@@ -55,3 +55,20 @@ adversarial perturbations.
     <p>Replace &lt;name&gt; with the desired value for the <code>NAME</code> environment variable, and replace &lt;image-name&gt; with the name of the Docker image you built in the previous step. The <code>-p</code> flag maps port 80 from the container to port 80 on the host machine.</p>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Running with python</title>
+  </head>
+  <body>
+    <h1>Python Project Documentation</h1>
+    <p>To use this Python project, follow the instructions below:</p>
+    <ol>
+      <li>Clone the repository</li>
+      <li>Open the terminal or command prompt and navigate to the cloned repository</li>
+      <li>Run the command "python main.py" to start the project</li>
+      <li>All results will be stored in the "results" folder</li>
+    </ol>
+  </body>
+</html>
