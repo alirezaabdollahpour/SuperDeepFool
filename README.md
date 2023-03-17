@@ -25,5 +25,5 @@ adversarial perturbations.
 
 # Illustration of SuperDeepFool
 <p align="center">
-<img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="350" width="750"/>
+<img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="150" width="150"/>
 </p>
