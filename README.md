@@ -23,12 +23,12 @@ attacks are also suitable for evaluating the robustness of
 large models and can be used to perform adversarial training (AT) to achieve state-of-the-art robustness to minimal ℓ2
 adversarial perturbations.
 
-# Illustration of SuperDeepFool
+## Illustration of SuperDeepFool
 <p align="center">
-<img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="280" width="280"/>
+<img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="200" width="200"/>
 </p>
 
-## Running in Docker <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/docker.png" alt="docker" style="float:right; margin-right: 2px; width: 150px;">
+# Running in Docker <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/docker.png" alt="docker" style="float:right; margin-right: 2px; width: 150px;">
 
 <!DOCTYPE html>
 <html>
