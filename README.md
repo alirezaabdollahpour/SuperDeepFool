@@ -75,7 +75,7 @@ Below, we provide the results with SDF. We test our algorithms on deep convoluti
 ImageNet datasets. For the evaluation, we use all the
 MNIST test dataset, while for CIFAR-10 and ImageNet we
 use 1000 samples randomly chosen from their corresponding
-test datasets. For MNIST, we use a robust model called IBP. For CIFAR-10, we use three models: an adversarially trained PreActResNet-18, a regularly
+test datasets. For MNIST, we use a robust model called [IBP](https://github.com/huanzhang12/CROWN-IBP). For CIFAR-10, we use three models: an adversarially trained [PreActResNet-18](https://openreview.net/forum?id=Azh9QBQ4tR7), a regularly
 trained Wide ResNet 28-10 (WRN-28 − 10) and
 LeNet. These models are obtainable via the [RobustBench](https://robustbench.github.io/). On ImageNet, we test the attacks on two
 ResNet-50 (RN-50) models: one regularly trained and one
