@@ -68,3 +68,16 @@ adversarial perturbations.
     </ol>
   </body>
 </html>
+
+
+## Results
+Below, we provide the results with SDF. We test our algorithms on deep convolutional neural network architectures trained on MNIST, CIFAR-10, and
+ImageNet datasets. For the evaluation, we use all the
+MNIST test dataset, while for CIFAR-10 and ImageNet we
+use 1000 samples randomly chosen from their corresponding
+test datasets. For MNIST, we use a robust model called IBP. For CIFAR-10, we use three models: an adversarially trained PreActResNet-18, a regularly
+trained Wide ResNet 28-10 (WRN-28 − 10) and
+LeNet. These models are obtainable via the RobustBench library. On ImageNet, we test the attacks on two
+ResNet-50 (RN-50) models: one regularly trained and one
+ℓ2 adversarially trained, obtainable through the robustness
+library.
