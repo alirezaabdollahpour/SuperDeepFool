@@ -84,3 +84,5 @@ ResNet-50 (RN-50) models: one regularly trained and one
 ### Comparison with DeepFool in terms of orthogonality
 | Attack | Mean-&#8467;<sub>2</sub> | Median-&#8467;<sub>2</sub> | Grads |
 |---|:---:|:---:|:---:|
+| DF | 0.17 |0.15 | 14 |
+| SDF | 0.11 | 0.10 | 32|
