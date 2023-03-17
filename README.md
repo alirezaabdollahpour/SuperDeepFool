@@ -81,7 +81,7 @@ LeNet. These models are obtainable via the [RobustBench](https://robustbench.git
 ResNet-50 (RN-50) models: one regularly trained and one
 ℓ2 adversarially trained, obtainable through the [robustness library](https://github.com/MadryLab/robustness).
 
-### Comparison with DeepFool in terms of orthogonality
+### Comparison with DeepFool in terms of mean and the median of &#8467;<sub>2</sub>-norm of perturbations
 | Attack | Mean-&#8467;<sub>2</sub> | Median-&#8467;<sub>2</sub> | Grads |
 |---|:---:|:---:|:---:|
 | DF | 0.17 |0.15 | 14 |
