@@ -25,7 +25,7 @@ adversarial perturbations.
 
 ## Illustration of SuperDeepFool
 <p align="center">
-<img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="200" width="200"/>
+<img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="220" width="220"/>
 </p>
 
 # Running in Docker <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/docker.png" alt="docker" style="float:right; margin-right: 2px; width: 150px;">
