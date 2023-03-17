@@ -79,5 +79,8 @@ test datasets. For MNIST, we use a robust model called [IBP](https://github.com/
 trained Wide ResNet 28-10 (WRN-28 − 10) and
 LeNet. These models are obtainable via the [RobustBench](https://robustbench.github.io/). On ImageNet, we test the attacks on two
 ResNet-50 (RN-50) models: one regularly trained and one
-ℓ2 adversarially trained, obtainable through the [robustness library](https://github.com/MadryLab/robustness)
-.
+ℓ2 adversarially trained, obtainable through the [robustness library](https://github.com/MadryLab/robustness).
+
+### Comparison with DeepFool in terms of orthogonality
+| Attack | Mean-&#8467;<sub>&2;</sub> | Median-&#8467;<sub>&2;</sub> | Grads |
+|---|:---:|:---:|:---:|
