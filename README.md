@@ -58,11 +58,7 @@ adversarial perturbations.
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Running with python</title>
-  </head>
-  <body>
-    <h1>Python Project Documentation</h1>
+    <h1>Running with python</h1>
     <p>To use this Python project, follow the instructions below:</p>
     <ol>
       <li>Clone the repository</li>
