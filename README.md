@@ -142,7 +142,7 @@ python curvature.py
 ```
 
 ## Implementations
-In terms of implementation, we use [Pytorch](https://github.com/pytorch/pytorch). [Foolbox](https://github.com/bethgelab/foolbox) and [Torchattcks](https://github.com/Harry24k/adversarial-attacks-pytorch) libraries are used to implement adversarial
+In terms of implementation, we use [Pytorch](https://github.com/pytorch/pytorch) . [Foolbox](https://github.com/bethgelab/foolbox) and [Torchattcks](https://github.com/Harry24k/adversarial-attacks-pytorch) libraries are used to implement adversarial
 attacks.
 
 
