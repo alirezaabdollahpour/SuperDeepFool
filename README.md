@@ -109,7 +109,7 @@ adversarially trained using SDF against minimum-norm attacks and [AutoAttack](ht
 insights into the effectiveness of adversarial training with
 SDF and sheds light on its potential applications in building
 more robust models. 
-We adversarially train a WRN-28-10 on CIFAR-10. Similar to the procedure followed i[Madry et al,](https://scholar.google.ch/citations?view_op=view_citation&hl=en&user=SupjsEUAAAAJ&citation_for_view=SupjsEUAAAAJ:IWHjjKOFINEC), we restrict ℓ2-norms
+We adversarially train a WRN-28-10 on CIFAR-10. Similar to the procedure followed [Madry et al,](https://scholar.google.ch/citations?view_op=view_citation&hl=en&user=SupjsEUAAAAJ&citation_for_view=SupjsEUAAAAJ:IWHjjKOFINEC), we restrict ℓ2-norms
 of perturbation to 2.6 and set the maximum number of iterations for SDF to 6. We train the model on clean examples
 for the first 200 epochs, and we then fine-tune it with SDF
 generated adversarial examples for 60 more epochs. Our
