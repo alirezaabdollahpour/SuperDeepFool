@@ -28,6 +28,20 @@ adversarial perturbations.
 <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/illus.png" alt="illus" height="420" width="720"/>
 </p>
 
+# Repository Structure
+
+```
+└── attacks             # Source code for attacks
+    ├── attack            # Attack class
+    ├── DeepFool              # DeepFool
+    ├── SuperDeepFool             # SuperDeepFool
+└── utils             # Source code for utils
+  ├── utils            # utils function
+
+└── Dockerfile        # Docker scripts
+└── main.py           # main scripts
+```
+
 # Running in Docker <img src="https://github.com/alirezaabdollahpour/SuperDeepFool/blob/main/images/docker.png" alt="docker" style="float:right; margin-right: 2px; width: 150px;">
 
 <!DOCTYPE html>
