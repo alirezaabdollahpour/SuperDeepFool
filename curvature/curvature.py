@@ -1,5 +1,9 @@
 "Estimate model curvature using the power method"
 
+'''
+In this code we use source code of this paper -> "https://github.com/kylematoba/lcnn"
+'''
+
 import os
 import logging
 from typing import Tuple
@@ -24,12 +28,6 @@ logger.setLevel(logging.INFO)
 torch.cuda.empty_cache()
 device = torch.device("cuda")
 print(device)
-
-
-
-
-
-
 
 
 
