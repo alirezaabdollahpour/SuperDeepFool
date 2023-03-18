@@ -67,7 +67,7 @@ adversarial perturbations.
     <p>Replace &lt;image-name&gt; with the desired name for the Docker image.</p>
     <h2>Running the Docker Container</h2>
     <p>To run the Docker container, use the following command:</p>
-    <pre><code>docker run -p 80:80 -e NAME=&lt;name&gt; &lt;image-name&gt;</code></pre>
+    <pre><code>docker run --gpus all -it  NAME=&lt;name&gt; &lt;image-name&gt;</code></pre>
     <p>Replace &lt;name&gt; with the desired value for the <code>NAME</code> environment variable, and replace &lt;image-name&gt; with the name of the Docker image you built in the previous step. The <code>-p</code> flag maps port 80 from the container to port 80 on the host machine.</p>
   </body>
 </html>
