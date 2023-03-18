@@ -1,5 +1,5 @@
-# Use an official Python runtime as a parent image
-FROM python:3.9-slim-buster
+# Use an official PyTorch image as a parent image
+FROM pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 # Set the working directory to /app
 WORKDIR /app
@@ -16,5 +16,5 @@ EXPOSE 80
 # Define environment variable
 ENV NAME World
 
-# Run app.py when the container launches
-CMD ["python", "app.py"]
+# Run main.py when the container launches
+CMD ["python", "main.py"]
