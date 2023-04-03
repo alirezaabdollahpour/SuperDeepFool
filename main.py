@@ -2,6 +2,7 @@ import argparse
 import logging
 import os
 import torch
+import time
 import numpy as np
 from tqdm import tqdm
 from robustbench import load_cifar10, load_model
@@ -33,6 +34,7 @@ def main(args, logger):
     ls = [attacks]
     for attack in ls:
         perturbation_norm_list = []
+        start = time.time()
         for j, data in tqdm(enumerate(test_loader)):
             im, target = data
             im = im.to(device)
@@ -40,12 +42,13 @@ def main(args, logger):
             x = attack(im, target)
             r_tot = torch.abs(x - im)
             perturbation_norm_list.append(l2_norm(r_tot).detach().cpu().numpy())
-
+        end = time.time()
         mean_r_l2 = np.mean(perturbation_norm_list)
         median_r_l2 = np.median(perturbation_norm_list)
         logger.info(f"mean_r_l2 is:{mean_r_l2}")
         logger.info(f"median_r_l2 is:{median_r_l2}")
         logger.info(f"lenght of perturb is : {len(perturbation_norm_list)}")
+        logger.info(f"Time taken for {n_examples} examples is {end - start}")
 
 if __name__ == '__main__':
     # Set up logger
@@ -56,6 +59,8 @@ if __name__ == '__main__':
     file_handler.setLevel(logging.INFO)
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
+    file_handler.stream.write('##########################################################3\n')
+    file_handler.flush()
     parser = argparse.ArgumentParser(description='Run SuperDeepFool attack on CIFAR-10 dataset')
     parser.add_argument('--n-examples', type=int, default=2, metavar='N',
                         help='number of examples to load for the dataset (default: 2)')
