@@ -4,7 +4,6 @@ import torch.nn as nn
 from attacks.attack import Attack
 
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 class DeepFool(Attack):
     r"""

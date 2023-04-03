@@ -1,0 +1,4 @@
+2023-04-03 18:01:07,615 - INFO - Accuracy of original model: 1.0
+2023-04-03 18:01:12,648 - INFO - mean_r_l2 is:0.10858674347400665
+2023-04-03 18:01:12,648 - INFO - median_r_l2 is:0.07913047820329666
+2023-04-03 18:01:12,648 - INFO - lenght of perturb is : 10

@@ -30,10 +30,10 @@ class SuperDeepFool(Attack):
         correct = torch.tensor([True]*batch_size)
         curr_steps = 0
         r_tot = torch.zeros_like(images)
-        adv_images = []
-        for idx in range(batch_size):
-            image = images[idx:idx+1].clone().detach()
-            adv_images.append(image)
+        adv_images = [images[i::torch.cuda.device_count()].clone().detach().to(device=i) for i in range(torch.cuda.device_count())]
+        if batch_size % torch.cuda.device_count() != 0:
+            adv_images[-1] = images[torch.cuda.device_count() * (batch_size // torch.cuda.device_count()):].clone().detach().to(self.device)
+
 
         while (True in correct) and (curr_steps < self.steps):
             for idx in range(batch_size):
@@ -61,9 +61,6 @@ class SuperDeepFool(Attack):
                 last_grad = torch.autograd.grad(cost, adv_image_Deepfool,
                                            retain_graph=False, create_graph=False)[0]
 
-                if self.l_norm == 'Linf':
-                    r_ = (last_grad.detach().cpu().numpy() * ((r_ + r_i)).detach().cpu().numpy()).sum() * np.sign(last_grad.detach().cpu().numpy()) / np.abs(last_grad.detach().cpu().numpy()).sum()
-                    r_ = torch.from_numpy(r_).to(self.device)
                 if self.l_norm == 'L2':
                     last_grad = last_grad / last_grad.norm()
                     r_ = r_ + (last_grad * (r_i)).sum() * last_grad / (np.linalg.norm(last_grad.detach().cpu().numpy().flatten(), ord=2)) ** 2
