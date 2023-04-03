@@ -76,7 +76,7 @@ class DeepFool(Attack):
         if pre != label:
             return (True, pre, image)
 
-        ws = self._construct_jacobian(fs, image)
+        ws = self._construct_jacobian_parallel(fs, image)
         image = image.detach()
 
         f_0 = fs[label]
@@ -109,3 +109,10 @@ class DeepFool(Attack):
             y_element.backward(retain_graph=(False or idx+1 < len(y)))
             x_grads.append(x.grad.clone().detach())
         return torch.stack(x_grads).reshape(*y.shape, *x.shape)
+    
+    def _construct_jacobian_parallel(self, y, x):
+        y = x.repeat(10, 1, 1, 1).detach().requires_grad_()
+        out = self.model(y)
+        out2 = out.diag().sum()
+        out2.backward()
+        return y.grad
