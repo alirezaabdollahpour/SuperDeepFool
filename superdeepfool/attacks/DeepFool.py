@@ -1,8 +1,8 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from attacks.attack import Attack
 
+from superdeepfool.attacks.attack import Attack
 
 
 class DeepFool(Attack):

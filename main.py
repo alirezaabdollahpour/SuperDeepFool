@@ -6,9 +6,10 @@ import time
 import numpy as np
 from tqdm import tqdm
 from robustbench import load_cifar10, load_model
-from robustbench.data import load_cifar100
-from attacks.SuperDeepFool import SuperDeepFool
-from utils.utils import *
+
+from superdeepfool.attacks.SuperDeepFool import SuperDeepFool
+from superdeepfool.utils import *
+
 
 def main(args, logger):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -47,8 +48,9 @@ def main(args, logger):
         median_r_l2 = np.median(perturbation_norm_list)
         logger.info(f"mean_r_l2 is:{mean_r_l2}")
         logger.info(f"median_r_l2 is:{median_r_l2}")
-        logger.info(f"lenght of perturb is : {len(perturbation_norm_list)}")
+        logger.info(f"length of perturb is : {len(perturbation_norm_list)}")
         logger.info(f"Time taken for {n_examples} examples is {end - start}")
+
 
 if __name__ == '__main__':
     # Set up logger

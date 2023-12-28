@@ -1,6 +1,7 @@
 import torch
 from joblib import Parallel, delayed
 
+
 class Search:
     def __init__(self, model, search_iter=10, num_jobs=15):
         self.model = model

@@ -7,19 +7,16 @@ In this code we use source code of this paper -> "https://github.com/kylematoba/
 import os
 import logging
 from typing import Tuple
-from collections import OrderedDict
 from typing import Tuple
-from distutils.version import LooseVersion
-from typing import Union
 import argparse
 import socket
 import datetime as dt
-import copy
-import random
 from torch import nn, Tensor
 import torch.nn.functional as F
 import torch
-from utils.utils import *
+
+from superdeepfool.utils import *
+
 import torch.nn.functional as F
 from robustbench import load_cifar10, load_model
 

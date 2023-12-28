@@ -2,8 +2,10 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from attacks.attack import Attack
-from attacks.DeepFool import DeepFool
+
+from superdeepfool.attacks.attack import Attack
+from superdeepfool.attacks.DeepFool import DeepFool
+
 
 class SuperDeepFool(Attack):
     def __init__(self, model, steps=100,overshoot=0.02,search_iter = 0,number_of_samples = None,l_norm:str = 'L2'):
