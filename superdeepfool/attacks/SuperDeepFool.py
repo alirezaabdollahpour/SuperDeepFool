@@ -20,8 +20,6 @@ class SuperDeepFool(Attack):
         self.l_norm = l_norm
         self.target_label = None
 
-
-
     def forward(self,images, labels):
         r"""
         Overridden.

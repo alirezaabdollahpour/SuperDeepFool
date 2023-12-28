@@ -26,7 +26,7 @@ def main(args, logger):
 
     model = load_model(model_name='Standard', dataset='cifar10')
     torch.cuda.empty_cache()
-    accuracy_orig = clean_accuracy(model.to(device), images.to(device), labels.to(device),batch_size=batch_size, device=device)
+    accuracy_orig = clean_accuracy(model.to(device), images, labels, batch_size=batch_size, device=device)
     logger.info(f"Accuracy of original model: {accuracy_orig}")
     requires_grad_(model, False)
 
