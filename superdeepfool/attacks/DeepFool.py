@@ -1,4 +1,3 @@
-import numpy as np
 import torch
 import torch.nn as nn
 
@@ -22,7 +21,11 @@ class DeepFool(Attack):
         >>> attack = torchattacks.DeepFool(model, steps=50, overshoot=0.02)
         >>> adv_images = attack(images, labels)
     """
-    def __init__(self, model, steps=100, overshoot=0.02, search_iter = 0,number_of_samples = None):
+    def __init__(self, model,
+                 steps: int=100,
+                 overshoot: float=0.02,
+                 search_iter:int = 0,
+                 number_of_samples = None):
         super().__init__("DeepFool", model)
         self.steps = steps
         self.overshoot = overshoot
