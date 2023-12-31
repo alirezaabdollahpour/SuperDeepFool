@@ -38,7 +38,7 @@ class DDN:
                  levels: int = 256,
                  max_norm: Optional[float] = None,
                  device: torch.device = torch.device('cpu'),
-                 callback: Optional = None) -> None:
+                 callback: Optional[object] = None) -> None:
         self.steps = steps
         self.gamma = gamma
         self.init_norm = init_norm
